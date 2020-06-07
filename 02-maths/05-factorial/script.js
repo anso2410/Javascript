@@ -16,7 +16,18 @@
     document.getElementById("run").addEventListener("click", function() {
 
         // your code here
-
+      let nbr = document.getElementById('number').value;
+        function factorisation(nbr) {
+            if (nbr ===0){
+                return 1;
+            }
+            else{
+                return (nbr * factorisation(nbr-1));
+            }
+            
+          
+        }
+         alert(factorisation)(nbr);
     });
 
 })();

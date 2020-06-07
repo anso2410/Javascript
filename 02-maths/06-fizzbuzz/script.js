@@ -12,5 +12,19 @@
 (function() {
 
     // your code here
+    for (let a = 0; a < 101 && a>1 ; a++) {
+       if (a %3 === 0) {
+           console.log('fizz');
+       }
+       if (a% 5 ===0) {
+           console.log('buzz');
+       } if (a% 5 ===0 && a%3 ===0) {  //a% 15 ===0;
+           console.log('fizzbuz'); 
+       }
+       else{
+           console.log(a);
+       }
+        
+    }
 
 })();
