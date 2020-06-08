@@ -10,21 +10,16 @@
 // You will have time to focus on it later.
 
 (function() {
-
-    // your code here
-    for (let a = 0; a < 101 && a>1 ; a++) {
-       if (a %3 === 0) {
-           console.log('fizz');
-       }
-       if (a% 5 ===0) {
-           console.log('buzz');
-       } if (a% 5 ===0 && a%3 ===0) {  //a% 15 ===0;
-           console.log('fizzbuz'); 
-       }
-       else{
-           console.log(a);
-       }
-        
+        for (let a = 1; a <= 100; a++) {
+        if (a % 3 === 0 && a % 5 === 0) {
+            console.log('fizzbuzz');
+        } else if (a % 3 === 0) {
+            console.log('fizz');
+        } else if (a % 5 === 0) {
+            console.log('buzz');
+        } else {
+            console.log(a);
+        }
     }
 
 })();
