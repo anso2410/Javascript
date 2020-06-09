@@ -11,36 +11,30 @@
 
 (function() {
 
-    // your code here
-    // document.getElementById("run").addEventListener("click", () => {
-    //     let mydate = new Date();
-
-    //     let options = {
-    //         month: 'long'
-    //     };
-    //     mydate.setFullYear(new Number(document.getElementById("year").value));
-    //     for (let index = 0; index < 12; index++) {
-    //         for (let ind = 1; ind <= 31; ind++) {
-    //             mydate.setMonth(index, ind);
-    //             if (mydate.getDay() == 5 && mydate.getDate() == 13) {
-    //                 console.log(new Intl.DateTimeFormat('fr-FR', options).format(mydate));
-    //             }
-    //         }
-    //     }
-    // });
+    
             document.getElementById("run").addEventListener('click', function(){
                 let date = new Date();
+                // let nomMois =[];
                 let optionFormat = {
-                    month : "long"
+                    month : "long",
+                    weekday: "long",
+                    day: "numeric"      // pour l'affichage
                 };
-              date.setFullYear( new Number(document.getElementById("year").value));
+              date.setFullYear( new Number(document.getElementById("year").value));// reset l'année qui est entrée dans l'input + céer un objet nombre
              
              for (let mois= 0; mois < 12; mois++) {
-                 for (let)
-                if (date.getDay() === 5 && date.getDate() === 13 ){
+                 for (let dayNumber = 1; dayNumber <= 31; dayNumber ++){
+                   date.setMonth(mois, dayNumber);
+                  if (date.getDay() == 5 && date.getDate() == 13 ){           // renvoi jour de la semaine 0= dimanche
+                                                                                  // renvoi le jour du mois 1-31
+                            console.log( date.getMonth()+1);                                           
+                    }
+                 }
+                {
                    
                 }
-                console.log(new Intl.DateTimeFormat('fr-FR', optionFormat).format(date));// Intl.DateTimeFormat.prototype.format()
+               
+               
              }
             });
 })();
