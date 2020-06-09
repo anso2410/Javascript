@@ -22,8 +22,26 @@
         "pêche",
         "raisin",
         "cerise",
-    ];
 
-    // your code here
+        
+    ];
+    
+    
+  //  your code here
+    document.getElementById('run').addEventListener('click', function(){
+          
+           
+        //  const iterator = fruits.values();
+        //  for (const value of iterator){
+        //      console.log(value);
+        //  }
+         
+        fruits.shift();
+         fruits.pop();
+         fruits.unshift('banane');
+         fruits.push('kiwi');
+        console.log(fruits);
+            
+        });
 
 })();
