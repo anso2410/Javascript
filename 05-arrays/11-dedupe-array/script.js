@@ -27,7 +27,10 @@
         "raisin",
         "cerise",
     ];
-
+document.getElementById('run').addEventListener('click', function(){
+    let fruitSansDoublons = [...new Set(fruits)];
+    console.log(fruitSansDoublons);
+});
     // your code here
 
 })();
