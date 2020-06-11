@@ -37,6 +37,45 @@
         "tangent",
         "arboré",
     ]);
+ 
+    document.getElementById("run").addEventListener("click", function(){
+        let birdRandom = Math.floor(Math.random() * birds.length);
+        let size = adjectives.size;// 
+        let adjRandom = Math.floor(Math.random() * size);
+        let tabAdjectif = Array.from(adjectives);
+        console.log(birdRandom);
+        console.log(tabAdjectif);
+
+        if (birds[birdRandom].fem == true){
+            document.getElementById("target").innerHTML = birds[birdRandom].name +" "+ tabAdjectif[adjRandom]+"e";
+        }else {
+            document.getElementById("target").innerHTML = birds[birdRandom].name +" "+ tabAdjectif[adjRandom];
+        }
+
+    });
+
+
+     
+  
+ 
+  
+   
 
     // your code here
+    // document.getElementById("run").addEventListener("click", function(){
+    //     let numRandomBirds = Math.floor(Math.random() * birds.length);
+    //     let numRandomAdj = Math.floor(Math.random() * adjectives.size);
+    //     const adjectivesArray = Array.from(adjectives);
+    //     // console.log(numRandomAdj);
+    //     // console.log(adjectivesArray);
+        
+    //     if (birds[numRandomBirds].fem == true){
+    //         // console.log("La "+birds[numRandomBirds].name +" "+ adjectivesArray[numRandomAdj]+"e")
+    //         document.getElementById("target").innerHTML = "La "+birds[numRandomBirds].name +" "+ adjectivesArray[numRandomAdj]+"e";
+    //     }else{
+    //         // console.log("Le "+birds[numRandomBirds].name +" "+ adjectivesArray[numRandomAdj]);
+    //         document.getElementById("target").innerHTML = "Le "+birds[numRandomBirds].name +" "+ adjectivesArray[numRandomAdj];
+    //     }
+    // });
+  
 })();
