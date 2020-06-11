@@ -13,4 +13,15 @@
     const keys = ["name", "species", "age", "gender", "color"];
     const values = ["Skitty", "cat", 9, "female", "tabby"];
     // your code here
+    document.getElementById('run').addEventListener('click',function (){
+    //creer un nouvel objet
+    let newObject = new Map();
+    console.log(newObject);
+    //parcourir le tableau keys
+    keys.forEach (function(element, index) {//pour chaque index de keys
+     newObject.set (element, values[index]);// gr&ceà set j'ajoute à chaque index des elemnt parcouru dans keys l index du tableau values
+    
+    });
+    console.table(Object.fromEntries(newObject)); //grace à object.fromEntries j'associe les index de keys et values en objet cle /valeur
+    });
 })();
