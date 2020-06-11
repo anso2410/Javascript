@@ -12,8 +12,15 @@
 (() => {
     // your code here
     document.getElementById('run').addEventListener('click', function(){
-                let myself = [
-                    {}
-                ]
+                let tintin = 
+                    {
+                        lastName: "Dupont",
+                        FirstName: "Dupont" ,
+                        Age: "200",
+                        city: "cloud9",
+                        country: "congo"
+                    }
+                    console.table(tintin);
+                
     });
 })();
