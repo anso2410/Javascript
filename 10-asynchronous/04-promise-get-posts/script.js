@@ -11,4 +11,19 @@
 
 (() => {
     // your code here
+    
+       document.getElementById('run').addEventListener('click', function(){
+
+            const promesse = window.lib.getPosts();
+
+            promesse.then((posts)=>{
+                console.table(posts);
+            })
+       });
+         
+               
+           
+       
+         
 })();
+
