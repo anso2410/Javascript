@@ -17,7 +17,7 @@
         }
         else {
             array.forEach(article =>{
-                window.lib.getComments(article.id, (error,array2)=>{
+                window.lib.getComments(article.id, function (error,array2){
                     if(error){
                        console.log('rrr');
                     }
