@@ -26,5 +26,22 @@
         os: "linux",
         user: null,
     };
+   
     // your code here
+    document.getElementById('run').addEventListener('click', function(){
+        console.table([computers]);
+        computers.forEach(object => {
+            if (object.os == undefined) { // l'objet n'a pas reçu de valeur contrairement à null
+                object.os = defaultProps.os;
+             }
+            if (object.available == undefined){
+                object.available = defaultProps.available;
+            } 
+            if(object.user == undefined){
+                object.user = defaultProps.user;
+            }
+            console.table([computers]);
+        })
+    });
+    
 })();

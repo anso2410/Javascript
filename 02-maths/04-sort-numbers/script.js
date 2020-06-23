@@ -16,7 +16,7 @@
     document.getElementById("run").addEventListener("click", function() {
 
         // your code here
-        let numbers = document.getElementById("numbers").value.split(',') .map(Number);
+        let numbers = document.getElementById("numbers").value.split(',').map(Number);
         function compare (x, y){
             return x-y;
         }

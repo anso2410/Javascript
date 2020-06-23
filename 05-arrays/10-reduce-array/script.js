@@ -88,7 +88,19 @@
             age: 81,
         },
     ];
-
+        document.getElementById('run').addEventListener('click', function(){
+     
+          
+                // console.log(people.map((elem) => elem.age)
+                //     .reduce((acc, curr) => acc + curr));
+                let elem = people.map(element => element.age);// je creer un tableau d'objet age grace a .map 
+                console.log(elem);
+                function sum (value1, value2){
+                    return value1 + value2;
+                }
+                console.log(elem.reduce(sum));
+            });
+    
     // your code here
 
 })();

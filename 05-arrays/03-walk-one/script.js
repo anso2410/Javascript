@@ -25,7 +25,12 @@
         "grap",
         "cherry",
     ];
-
+    document.getElementById('run').addEventListener("click", function(){
+        const iterator = fruits.values();
+        for (const value of iterator){
+            console.log(value);
+        }
+    });
     // your code here
 
 })();

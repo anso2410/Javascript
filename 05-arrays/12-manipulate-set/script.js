@@ -22,6 +22,21 @@
         "grape",
         "cherry",
     ]);
+    document.getElementById('run').addEventListener('click', function(){
 
-    // your code here
+    fruits.add('banana').add('kiwi');
+    
+   // console.log(fruits);
+    // your code here});
+    //  fruits.forEach((elem) => {
+    //          if (elem == 'pomme' || elem == 'cerise') {
+    //             fruits.delete(elem);
+    //         }
+     fruits.delete('apple');
+     fruits.delete('cherry');
+     console.log(fruits);
+// });
+    });
 })();
+
+

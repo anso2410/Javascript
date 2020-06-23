@@ -15,7 +15,7 @@
     let h = new Date();
     let hour = h.getHours();
     let minute = h.getMinutes();
-    if (hour <= 17 && minute <= 30) {
+    if (hour <= 17 && minute <= 30 || heure < 17) {
         document.getElementById("target").innerHTML = "Hello";
     } 
     else{

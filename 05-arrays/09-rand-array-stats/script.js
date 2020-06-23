@@ -32,16 +32,20 @@ document.getElementById('run').addEventListener('click', function(){
        random(1, 100),
        random(1, 100),
   ];
-   document.getElementById('n-1').innerHTML= tabNumber[0];
-   document.getElementById('n-2').innerHTML= tabNumber[1];
-   document.getElementById('n-3').innerHTML = tabNumber[2];
-   document.getElementById('n-4').innerHTML = tabNumber[3];
-   document.getElementById('n-5').innerHTML = tabNumber[4];
-   document.getElementById('n-6').innerHTML = tabNumber[5];
-   document.getElementById('n-7').innerHTML = tabNumber[6];
-   document.getElementById('n-8').innerHTML = tabNumber[7];
-   document.getElementById('n-9').innerHTML = tabNumber[8];
-   document.getElementById('n-10').innerHTML = tabNumber[9];
+//   for (let i = 1; i <= 10; i++) {
+//     document.getElementById('n'+i).innerHTML= tabNumber[i];
+      
+//   }
+    document.getElementById('n-1').innerHTML= tabNumber[0];
+    document.getElementById('n-2').innerHTML= tabNumber[1];
+    document.getElementById('n-3').innerHTML = tabNumber[2];
+    document.getElementById('n-4').innerHTML = tabNumber[3];
+    document.getElementById('n-5').innerHTML = tabNumber[4];
+    document.getElementById('n-6').innerHTML = tabNumber[5];
+    document.getElementById('n-7').innerHTML = tabNumber[6];
+    document.getElementById('n-8').innerHTML = tabNumber[7];
+    document.getElementById('n-9').innerHTML = tabNumber[8];
+    document.getElementById('n-10').innerHTML = tabNumber[9];
 
    const min = tabNumber.reduce((a, b) => Math.min(a, b))
    document.getElementById('min').innerHTML = min;

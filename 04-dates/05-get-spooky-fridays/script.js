@@ -24,7 +24,7 @@
              
              for (let mois= 0; mois < 12; mois++) {
                  for (let dayNumber = 1; dayNumber <= 31; dayNumber ++){
-                   date.setMonth(mois, dayNumber);
+                   date.setMonth(mois, dayNumber); // retourn a number of millisecond entre date.object et 01/1970
                   if (date.getDay() == 5 && date.getDate() == 13 ){           // renvoi jour de la semaine 0= dimanche
                                                                                   // renvoi le jour du mois 1-31
                             console.log( date.getMonth()+1);                                           

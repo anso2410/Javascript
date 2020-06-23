@@ -11,4 +11,34 @@
 
 (() => {
     // your code here
+    
+    class person  {
+        constructor (firstname, lastname){
+            this.firstname = firstname;
+            this.lastname = lastname;
+        };
+        get name() {
+             return `${this.firstname}  ${this.lastname}`;
+            
+        }
+        set name(result) {
+            let tabName = result.split(' ');
+            this.firstname = tabName[0];
+             this.lastname = tabName[1];
+        } 
+    }
+  
+    document.getElementById("run").addEventListener('click', () => {
+        let person2 = new person('victor', 'Hugo');
+        console.log(person2.name);
+        let person3 = new person('Barba','Papa');
+        console.log(person3.name);
+        console.log(person3 instanceof person);
+    })
+
+
+
+ 
+
+
 })();
