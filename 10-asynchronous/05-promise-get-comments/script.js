@@ -11,4 +11,20 @@
 
 (() => {
     // your code here
+    document.getElementById('run').addEventListener('click', function(){
+      const promesse =  window.lib.getPosts();
+      promesse.then((tabPosts) => {
+          tabPosts.forEach(element => {
+              const promesse2 = window.lib.getComments();
+                promesse2.then((comments) => {
+                  element.comment = comments;
+
+             })
+      })
+            console.log(tabPosts);
+
+        })
+    })
+
+
 })();
