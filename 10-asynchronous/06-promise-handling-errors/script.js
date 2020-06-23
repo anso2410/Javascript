@@ -11,4 +11,29 @@
 
 (() => {
     // your code here
+    document.getElementById('run').addEventListener('click', function(){
+
+        const promesse = window.lib.getPersons();
+
+        promesse.then((tabPersons) => {
+            console.log(tabPersons);
+       
+
+        })
+        
+            .catch((err) => {
+            console.error(err);
+        });
+    
+
+
+
+
+
+
+
+
+
+
+    });
 })();
