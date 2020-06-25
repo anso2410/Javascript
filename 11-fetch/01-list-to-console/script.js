@@ -11,4 +11,12 @@
 
 (() => {
     // your code here
+    document.getElementById("run").addEventListener('click', () =>{
+           
+            fetch("http://localhost:3000/heroes")
+            .then(res => res.json())
+            .then(data => console.log(data))
+            .catch(error => console.log(error));
+           
+    });
 })();
